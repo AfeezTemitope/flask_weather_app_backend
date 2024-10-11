@@ -4,7 +4,7 @@ from views import weather_view
 from flask_cors import CORS
 
 webapp = Blueprint('webapp', __name__)
-
+CORS(webapp)
 
 
 @webapp.get('/weather')
