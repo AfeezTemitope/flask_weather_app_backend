@@ -3,7 +3,7 @@ from flask_cors import CORS
 from urls import webapp
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 app.register_blueprint(webapp)
