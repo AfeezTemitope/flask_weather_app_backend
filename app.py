@@ -9,7 +9,7 @@ CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
 app.register_blueprint(webapp)
 
 
-@webapp.route('/')
+@app.route('/')
 def index():
     return "Welcome to the Weather App!"
 
